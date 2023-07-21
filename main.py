@@ -27,7 +27,7 @@ class PromptQuery(BaseModel):
     prompt: str
 
 # Create the FastAPI app
-app=FastAPI()
+app=FastAPI(title="wendyAI_backend")
 
 app.add_middleware(CORSMiddleware,
                    allow_origins=["*"],
